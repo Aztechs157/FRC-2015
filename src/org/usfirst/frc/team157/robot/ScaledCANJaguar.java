@@ -9,7 +9,8 @@ import edu.wpi.first.wpilibj.CANJaguar;
 
 /**
  *
- * @author MattKahn
+ * @author Teju Nareddy, Matt Kahn, John Vedder
+ * 
  */
 public class ScaledCANJaguar extends CANJaguar
 {

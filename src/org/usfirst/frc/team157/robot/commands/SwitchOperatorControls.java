@@ -6,7 +6,9 @@ import org.usfirst.frc.team157.robot.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
+ * 
  * @author Teju Nareddy
+ * 
  */
 @Deprecated
 public class SwitchOperatorControls extends Command
