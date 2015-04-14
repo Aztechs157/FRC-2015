@@ -5,9 +5,7 @@ import org.usfirst.frc.team157.robot.subsystems.ForkliftPart;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- * 
  * @author Teju Nareddy
- * 
  */
 
 @Deprecated

@@ -6,8 +6,6 @@ import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
- * @author Teju Nareddy
- *
  */
 @Deprecated
 public class TurnLeftForTicks extends Command

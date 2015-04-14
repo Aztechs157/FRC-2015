@@ -6,8 +6,7 @@ import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
- * @author Teju Nareddy
- * 
+ * @author Teju
  */
 public class SleepForTime extends Command
 {

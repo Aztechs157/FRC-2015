@@ -13,7 +13,6 @@ import edu.wpi.first.wpilibj.command.Command;
 /**
  *
  * @author Matt Kahn, Teju Nareddy
- * 
  */
 public class DriveSpeedForTime extends Command
 {

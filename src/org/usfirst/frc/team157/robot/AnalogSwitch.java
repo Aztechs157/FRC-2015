@@ -3,11 +3,6 @@ package org.usfirst.frc.team157.robot;
 
 import edu.wpi.first.wpilibj.AnalogInput;
 
-/**
- * 
- * @author Teju Nareddy
- * 
- */
 public class AnalogSwitch extends AnalogInput
 {
 	private final double[] voltages =

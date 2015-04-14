@@ -11,8 +11,7 @@ import edu.wpi.first.wpilibj.buttons.Button;
 
 /**
  *
- * @author Matt Kahn
- * 
+ * @author matt
  */
 public class LogitechControllerButton extends Button
 {

@@ -10,7 +10,6 @@ import edu.wpi.first.wpilibj.can.CANMessageNotFoundException;
  *
  *
  * @author Teju Nareddy
- * 
  */
 public class RobotMap
 {

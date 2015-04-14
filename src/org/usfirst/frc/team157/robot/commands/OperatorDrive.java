@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /**
  *
- * @author Teju Nareddy, Matt Kahn
+ * @author Teju Nareddy
  *
  */
 public class OperatorDrive extends Command

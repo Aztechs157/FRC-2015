@@ -5,9 +5,7 @@ import org.usfirst.frc.team157.robot.RobotMap;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- * 
  * @author Teju Nareddy
- * 
  */
 public class PrintDebugData extends Command
 {
