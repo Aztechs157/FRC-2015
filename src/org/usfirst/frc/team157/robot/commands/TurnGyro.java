@@ -6,6 +6,8 @@ import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
+ * @author Teju Nareddy
+ *
  */
 public class TurnGyro extends Command
 {

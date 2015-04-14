@@ -5,6 +5,11 @@ import org.usfirst.frc.team157.robot.RobotMap;
 import org.usfirst.frc.team157.robot.ScaledCANJaguar;
 import edu.wpi.first.wpilibj.CANJaguar;
 
+/**
+ * 
+ * @author Teju Nareddy
+ *
+ */
 public class ForkliftForks extends ForkliftPart
 {
 	public boolean hasBox;
