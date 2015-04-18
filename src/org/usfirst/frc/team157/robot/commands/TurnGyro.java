@@ -11,13 +11,14 @@ import edu.wpi.first.wpilibj.command.Command;
  */
 public class TurnGyro extends Command
 {
-	public double degreesToTurn;
-	public boolean allDone;
-	
 	public enum ANGLES
 	{
 		NOTHING, TOTE, RC, BOTH, TOTE_180
 	}
+	
+	public double degreesToTurn;
+	
+	public boolean allDone;
 	
 	public TurnGyro(ANGLES type)
 	{

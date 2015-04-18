@@ -6,7 +6,7 @@ import org.usfirst.frc.team157.robot.ScaledCANJaguar;
 import edu.wpi.first.wpilibj.CANJaguar;
 
 /**
- * 
+ *
  * @author Teju Nareddy
  *
  */

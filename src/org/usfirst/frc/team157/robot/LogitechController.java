@@ -12,7 +12,7 @@ import edu.wpi.first.wpilibj.GenericHID;
 /**
  *
  * @author Jarrod Risley, Teju Nareddy, Matt Kahn
- * 
+ *
  */
 public class LogitechController extends GenericHID
 {
