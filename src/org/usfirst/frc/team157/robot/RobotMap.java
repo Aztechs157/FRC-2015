@@ -159,16 +159,10 @@ public class RobotMap
 		forksLowLimitSwitch = new DigitalLimitSwitch(FORKS_LOW_LIMITSWITCH_ID, FORKS_LOW_LIMITSWITCH_REVERSED);
 		elevatorLowLimitSwitch = new DigitalLimitSwitch(ELEVATOR_LOW_LIMSWITCH_ID, ELEVATOR_LOW_LIMSWITCH_REVERSED);
 		
-		// Instantiate potentiometers
-		/*
-		 * forksRotaryEncoder = new RotaryEncoder(FORKS_POTENTIOMETER_ID, "/home/lvuser/ForksEncoderConstants.txt");
-		 * elevatorRotaryEncoder = new RotaryEncoder(ELEVATOR_POTENTIOMETER_ID, "/home/lvuser/ElevatorEncoderConstants.txt");
-		 */
-		
-		// Instantiate Built In Accelerometer
+		// Instantiate Built-In Accelerometer
 		accelerometer = new BuiltInAccelerometer();
 		
-		// Gyrometer
+		// Instantiate Gyro
 		gyro = new Gyro(ANALOG_GYRO_ID);
 		
 		// Instantiate quad encoders

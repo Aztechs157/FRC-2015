@@ -61,59 +61,81 @@ public class AutonomousCommand extends CommandGroup
 		}
 		else if (switchPosition == 4)
 		{
-			// TODO
-			// 2 Yellow Tote Stack
+			// Pickup and drive back
 			
-			// Grab Tote
+			// Grab container/tote
 			addParallel(new SmartGrabForks());
+			// addSequential(new SleepForTime(1.5));
 			addSequential(new SleepUntilHasBox());
 			
 			// Lift it up
 			addParallel(new VoltageSetPart(12, Robot.elevator));
-			addSequential(new SleepForTime(1.5));
-			addSequential(new VoltageStopPart(Robot.elevator));
-			
-			// Turn 180 to knock down the other bin
-			addSequential(new TurnGyro(ANGLES.TOTE_180));
-			addParallel(new Brake());
-			
-			// Drive forward for a little
-			addSequential(new DriveGyroStraightForTicks(400));
-			addParallel(new Brake());
-			
-			// Lower tote
-			addParallel(new VoltageSetPart(-12, Robot.elevator));
 			addSequential(new SleepForTime(0.5));
 			addSequential(new VoltageStopPart(Robot.elevator));
 			
-			// Release tote
-			addParallel(new VoltageSetPart(-12, Robot.forks));
-			addSequential(new SleepForTime(1.5));
-			addSequential(new VoltageStopPart(Robot.forks));
-			
-			// Drive back a little, stop, lower elevator, drive forward, and stop
-			addSequential(new DriveSpeedForTime(-0.4, -0.5, 0.25));
+			// Drive Backward
+			addSequential(new DriveSpeedForTime(-0.6, -0.9, 3));
 			addSequential(new Brake());
+			
+			// Put down and release
 			addSequential(new VoltageSetPart(-12, Robot.elevator));
-			addSequential(new DriveSpeedForTime(0.4, 0.5, 0.25));
-			addSequential(new Brake());
+			addSequential(new VoltageSetPart(-12, Robot.forks));
 			
-			// Grab the tote (now has another tote on top)!
-			addParallel(new SmartGrabForks());
-			addSequential(new SleepUntilHasBox());
-			
-			// Lift it up a little
-			addParallel(new VoltageSetPart(12, Robot.elevator));
-			addSequential(new SleepForTime(0.5));
-			addSequential(new VoltageStopPart(Robot.elevator));
-			
-			// Turn left and stop
-			addSequential(new TurnGyro(ANGLES.BOTH));
-			addSequential(new Brake());
-			
-			// Drive Forward to auto zone
-			addSequential(new DriveGyroStraightForTicks(1600));
-			addSequential(new Brake());
+			/*
+			 * // TODO
+			 * // 2 Yellow Tote Stack
+			 * 
+			 * // Grab Tote
+			 * addParallel(new SmartGrabForks());
+			 * addSequential(new SleepUntilHasBox());
+			 * 
+			 * // Lift it up
+			 * addParallel(new VoltageSetPart(12, Robot.elevator));
+			 * addSequential(new SleepForTime(1.5));
+			 * addSequential(new VoltageStopPart(Robot.elevator));
+			 * 
+			 * // Turn 180 to knock down the other bin
+			 * addSequential(new TurnGyro(ANGLES.TOTE_180));
+			 * addParallel(new Brake());
+			 * 
+			 * // Drive forward for a little
+			 * addSequential(new DriveGyroStraightForTicks(400));
+			 * addParallel(new Brake());
+			 * 
+			 * // Lower tote
+			 * addParallel(new VoltageSetPart(-12, Robot.elevator));
+			 * addSequential(new SleepForTime(0.5));
+			 * addSequential(new VoltageStopPart(Robot.elevator));
+			 * 
+			 * // Release tote
+			 * addParallel(new VoltageSetPart(-12, Robot.forks));
+			 * addSequential(new SleepForTime(1.5));
+			 * addSequential(new VoltageStopPart(Robot.forks));
+			 * 
+			 * // Drive back a little, stop, lower elevator, drive forward, and stop
+			 * addSequential(new DriveSpeedForTime(-0.4, -0.5, 0.25));
+			 * addSequential(new Brake());
+			 * addSequential(new VoltageSetPart(-12, Robot.elevator));
+			 * addSequential(new DriveSpeedForTime(0.4, 0.5, 0.25));
+			 * addSequential(new Brake());
+			 * 
+			 * // Grab the tote (now has another tote on top)!
+			 * addParallel(new SmartGrabForks());
+			 * addSequential(new SleepUntilHasBox());
+			 * 
+			 * // Lift it up a little
+			 * addParallel(new VoltageSetPart(12, Robot.elevator));
+			 * addSequential(new SleepForTime(0.5));
+			 * addSequential(new VoltageStopPart(Robot.elevator));
+			 * 
+			 * // Turn left and stop
+			 * addSequential(new TurnGyro(ANGLES.BOTH));
+			 * addSequential(new Brake());
+			 * 
+			 * // Drive Forward to auto zone
+			 * addSequential(new DriveGyroStraightForTicks(1600));
+			 * addSequential(new Brake());
+			 */
 		}
 		else if (switchPosition == 5)
 		{
