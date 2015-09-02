@@ -24,7 +24,7 @@ public class RobotMap
 	private static final int DRIVE_RIGHT_JAG2_ID = 10;
 	
 	// Subsystem Jaguar IDs
-	private static final int FORKS_JAG_ID = 11;
+	private static final int FORKS_JAG_ID = 12;
 	private static final int ELEVATOR_JAG_ID = 13;
 	
 	// Digital IDs
