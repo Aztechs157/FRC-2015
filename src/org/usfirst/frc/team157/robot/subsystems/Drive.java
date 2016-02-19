@@ -7,7 +7,7 @@ import org.usfirst.frc.team157.robot.ScaledCANJaguar;
 import org.usfirst.frc.team157.robot.commands.OperatorDrive;
 import edu.wpi.first.wpilibj.CANJaguar;
 import edu.wpi.first.wpilibj.Encoder;
-import edu.wpi.first.wpilibj.Gyro;
+import edu.wpi.first.wpilibj.AnalogGyro;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 /**
@@ -26,7 +26,7 @@ public class Drive extends Subsystem
     private Encoder leftQuadEncoder = RobotMap.driveQuadEncoderLeft;
     private Encoder rightQuadEncoder = RobotMap.driveQuadEncoderRight;
 
-    private Gyro gyro = RobotMap.gyro;
+    private AnalogGyro gyro = RobotMap.gyro;
 
     public Drive()
     {

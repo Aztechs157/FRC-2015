@@ -120,7 +120,7 @@ public abstract class ForkliftPart extends Subsystem
 
     public boolean setJagPosition(double position)
     {
-        return setJag(position, CANJaguar.ControlMode.Position);
+        return setJag(position, CANJaguar.JaguarControlMode.Position);
     }
 
     public void setJagScale(double scalingFactor)
@@ -134,7 +134,7 @@ public abstract class ForkliftPart extends Subsystem
 
     public boolean setJagVoltage(double voltage)
     {
-        return setJag(voltage, CANJaguar.ControlMode.Voltage);
+        return setJag(voltage, CANJaguar.JaguarControlMode.Voltage);
     }
 
     public void setLowEndEncoderLimit(double position)
@@ -144,11 +144,11 @@ public abstract class ForkliftPart extends Subsystem
 
     protected void setAppropriateJagControlMode(CANJaguar.ControlMode mode)
     {
-        if (mode.equals(CANJaguar.ControlMode.Position))
+        if (mode.equals(CANJaguar.JaguarControlMode.Position))
         {
             setJagForPositionControl();
         }
-        else if (mode.equals(CANJaguar.ControlMode.Voltage))
+        else if (mode.equals(CANJaguar.JaguarControlMode.Voltage))
         {
             setJagForVoltageControl();
         }

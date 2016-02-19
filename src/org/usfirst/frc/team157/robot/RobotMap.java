@@ -2,7 +2,7 @@ package org.usfirst.frc.team157.robot;
 
 import edu.wpi.first.wpilibj.BuiltInAccelerometer;
 import edu.wpi.first.wpilibj.Encoder;
-import edu.wpi.first.wpilibj.Gyro;
+import edu.wpi.first.wpilibj.AnalogGyro;
 import edu.wpi.first.wpilibj.can.CANMessageNotFoundException;
 
 /**
@@ -84,7 +84,7 @@ public class RobotMap
     public static BuiltInAccelerometer accelerometer;
 
     // Declare Gyro Sensor
-    public static Gyro gyro;
+    public static AnalogGyro gyro;
 
     // Declare Quad Encoders
     public static Encoder driveQuadEncoderLeft;
@@ -166,7 +166,7 @@ public class RobotMap
         accelerometer = new BuiltInAccelerometer();
 
         // Instantiate Gyro
-        gyro = new Gyro(ANALOG_GYRO_ID);
+        gyro = new AnalogGyro(ANALOG_GYRO_ID);
 
         // Instantiate quad encoders
         driveQuadEncoderLeft = new Encoder(DRIVE_QUAD_ENCODER_LEFT_IDA, DRIVE_QUAD_ENCODER_LEFT_IDB, false);
