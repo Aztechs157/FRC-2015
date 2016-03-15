@@ -84,9 +84,9 @@ public class Robot extends IterativeRobot
         try
         {
             // Sets up the camera for display on the driver station
-            camera = CameraServer.getInstance();
-            camera.setQuality(50);
-            camera.startAutomaticCapture("cam0");
+//            camera = CameraServer.getInstance();
+//            camera.setQuality(50);
+//            camera.startAutomaticCapture("cam0");
         }
         catch (Exception E)
         {
