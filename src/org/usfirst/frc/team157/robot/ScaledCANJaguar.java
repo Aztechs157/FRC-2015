@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj.CANJaguar;
  * @author Teju Nareddy, Matt Kahn, John Vedder
  *
  */
-public class ScaledCANJaguar extends CANJaguar
+public class ScaledCANJaguar extends  CANJaguar
 {
 
     private double scalingFactor = 1;

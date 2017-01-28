@@ -119,11 +119,11 @@ public class LogitechController extends GenericHID
     // Constructor
     public LogitechController(final int port)
     {
+        super(port);
         m_ds = DriverStation.getInstance();
         m_port = port;
     }
 
-    @Override
     public boolean getBumper(Hand hand)
     {
         return getRawButton(ButtonType.kButtonA.value);
@@ -279,19 +279,16 @@ public class LogitechController extends GenericHID
         return getRawAxis(AxisType.kAxisRightY.value);
     }
 
-    @Override
     public double getThrottle()
     {
         return getRawAxis(AxisType.kAxisGameX.value);
     }
 
-    @Override
     public boolean getTop(Hand hand)
     {
         return getRawButton(ButtonType.kButtonLeftTop.value);
     }
 
-    @Override
     public boolean getTrigger(Hand hand)
     {
         return getRawButton(ButtonType.kButtonLeftB.value);
@@ -302,7 +299,6 @@ public class LogitechController extends GenericHID
         return getRawAxis(AxisType.kAxisTriggers.value);
     }
 
-    @Override
     public double getTwist()
     {
         return getRawAxis(AxisType.kAxisRightY.value);
@@ -320,7 +316,6 @@ public class LogitechController extends GenericHID
         return getRawAxis(AxisType.kAxisLeftY.value);
     }
 
-    @Override
     public double getZ(Hand hand)
     {
         return getRawAxis(AxisType.kAxisRightX.value);
@@ -331,5 +326,47 @@ public class LogitechController extends GenericHID
         centerValue[axisNum] = 0;
         centerValue[axisNum] = getRawAxis(axisNum);
         System.out.println("Axis " + axisNum + " recenter to " + centerValue[axisNum]);
+    }
+
+    @Override
+    public int getPOVCount()
+    {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public HIDType getType()
+    {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public String getName()
+    {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public void setOutput(int outputNumber, boolean value)
+    {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void setOutputs(int value)
+    {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void setRumble(RumbleType type, double value)
+    {
+        // TODO Auto-generated method stub
+        
     }
 }
